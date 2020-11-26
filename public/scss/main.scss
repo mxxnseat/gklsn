@@ -1,0 +1,37 @@
+*{
+    padding: 0;
+    margin: 0;
+}
+.list{
+    display: flex;
+    justify-content: space-between;
+    flex-wrap: wrap;
+}
+.book{
+    width: 210px;
+    min-height: 320px;
+    outline: 1px solid red;
+
+    &-image{
+        width: 100%;
+    }
+}
+.cart{
+    position: relative;
+    display: flex;
+    height: 30px;
+    cursor: pointer;
+    &-list{
+        height: 200px;
+        width: 400px;
+        outline: 1px solid red;
+        position: absolute;
+        display: none;
+        top: 30px;
+        background: #ccc;
+    
+        &.visible{
+            display: block;
+        }
+    }
+}
